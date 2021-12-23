@@ -10,6 +10,10 @@ import { Donut } from './models/donut.interface';
     </div>
     <!-- Add image displaying the donut.fileName when specified. -->
     <!-- Then, add the alt attribute to the image using the donut.name value. -->
+    <div class="card" *ngFor="let image of donut.name">
+    <img [src]="donut.name" alt ="donut.name"/>
+    </div>
+
   `
 })
 export class DonutComponent {
